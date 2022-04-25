@@ -7,8 +7,8 @@ args['port']
 //listen
 const port = args.port || process.env.PORT || 5000
 // Start an app server
-const server = app.listen(HTTP_PORT, () => {
-    console.log('App listening on port %PORT%'.replace('%PORT%',HTTP_PORT))
+const server = app.listen(port, () => {
+    console.log('App listening on port %PORT%'.replace('%PORT%',port))
 });
 
 //a2 flip functions
