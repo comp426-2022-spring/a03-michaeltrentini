@@ -51,12 +51,12 @@ function countFlips(array) {
       i++;
     }
     if (tails == 0) {
-      return "{ tails: " + tails + "} ";
+      return { tails: tails} ;
     }
     if (heads == 0) {
-      return "{ heads: " + heads + "} ";
+      return { heads: heads} ;
     }
-    return "{ heads: " + heads + ", tails: " + tails + " }";
+    return { heads: heads , tails: tails };
     }
     
     
