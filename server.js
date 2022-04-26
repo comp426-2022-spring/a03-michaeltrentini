@@ -11,6 +11,7 @@ const server = app.listen(port, () => {
     console.log('App listening on port %PORT%'.replace('%PORT%',port))
 });
 
+
 //a2 flip functions
 function coinFlip() {
     var output;
@@ -86,7 +87,7 @@ function flipACoin(call) {
     
 
     app.get('/app/flips/:number', (req, res) => {
-        const flips = coinFlips(req.params.number)
+        const flips = coinFlips(params.number)
         const count = countFlips(flips)
         res.status(200).json({ 'raw': flips, 'summary': count })
     })
